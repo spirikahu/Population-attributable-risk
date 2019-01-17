@@ -2,7 +2,7 @@
 
 This collection of code allows the user to implement the Frequentist delta, jackknife and bootstrap approaches for estimating the PAR and its confidence interval (DeltaCI.R, JackknifeCI.R and BootstrapCI.R). Additionally, we provide code for implementing a Bayesian alternative for estimating the PAR and its credible interval (BayesCI.R).
 
-Each of these methods are compared through simulation and their performance discussed in ....
+Each of these methods are compared through simulation and their performance discussed in Pirikahu (2016). The functions used in order to perform and analyse the simulation results is provided in 
 
 
 
