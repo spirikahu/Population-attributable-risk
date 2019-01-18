@@ -1,10 +1,10 @@
 ####################################################################################
 #  Component-wise Metropolis-Hastings random-walk Sampler (RWMH)                   #
 #                                                                                  #
-# This model incorporates infromation about the sensitivity and specificity of a   #
+# This model incorporates information about the sensitivity and specificity of a   #
 # diagnositc test and calculates the mean/median PAF and PAR with corresponding    #
-# CI and HPD intervals. Note that this function requires the installation of the   #  
-# package coda to run.                                                             #
+# 95% CI and HPD intervals. Note that this function requires the installation of   #  
+# the package coda to run.                                                         #
 #                                                                                  #
 # Function inputs:                                                                 #
 # data - as a vector of the form (a,b,c,d) where we have:                          #  

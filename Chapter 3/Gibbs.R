@@ -1,9 +1,9 @@
 ####################################################################################
 #  Gibbs Sampler (Gibbs)                                                           #
 #                                                                                  #
-# This model incorporates infromation about the sensitivity and specificity of a   #
+# This model incorporates information about the sensitivity and specificity of a   #
 # diagnositc test and calculates the mean/median PAF and PAR with corresponding    #
-# CI intervals. Note that this function requires the installation of the           #
+# 95% CI intervals. Note that this function requires the installation of the       #
 # package MCMCpack to run.                                                         #
 #                                                                                  #
 # Function inputs:                                                                 #
@@ -26,8 +26,8 @@
 #                                                                                  #                                                                  #
 #                                                                                  #
 # OUTPUT: a list where output$Stats provides the posterior mean, median, sd, Lower #
-# and Upper bounds of the credible interval for the PAR and HPD Lower and HPD Upper#
-# bounds.                                                                          #
+# and Upper bounds of the credible interval for the PAR.                           #
+#                                                                                  #
 #                                                                                  #
 # output$Theta provides a dataframe containing output for the Marcov-chain for     #
 # each parameter.                                                                  #
