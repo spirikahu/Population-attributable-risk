@@ -1,3 +1,3 @@
 # Chapter 4: Bayesian credible intervals for adjusted population attributable measures from more complex designs
 
-Two examples, including the low birth weight data and mastitis data, were explored throughout this chapter of the thesis. Currently code is provided for the methods developed for the low birth weight data. The code for the mastitis data will become avaliable once consent has been provided to release the data.  
+Two examples, including the low birth weight data and mastitis data, were explored throughout this chapter of the thesis. Currently code is provided for the methods developed for the low birth weight data. The code for the mastitis data will become avaliable once consent has being provided to release the data.  
