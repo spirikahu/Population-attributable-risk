@@ -103,7 +103,6 @@ lbwSim <- function(formula, data, Raceprop, EGR, N=sum(data$N),
     data.new <- data
     data.new$N <- new.N
     data.new$low <- new.low
-    print(data.new)
     
     ## Doing the MCMC algorithm ##
     flat <- logitfun(formula = formula, data = data.new, prior="flat", tune = tunef, B = Bf,
@@ -136,9 +135,9 @@ lbwSim <- function(formula, data, Raceprop, EGR, N=sum(data$N),
 ## Running lbwSim function ##
 lbw <- read.csv("lbwdata.csv")
 
-Results <- lbwSim(formula = cbind(low,N-low)~ smoke + race, data, Raceprop=c(0.5,0.2,0.3),
-                  EGR=c(0.6,0.4,0.4,0.6,0.2,0.8), N=192, tunec=1.2, tunef=1.5, Bf=8000, Bc=6000, 
-                  thin=1, kick=0, Lf=18000, Lc=16000, T=1000)
+Results <- lbwSim(formula = cbind(low,N-low)~ smoke + race, data=lbw, Raceprop=c(0.5,0.2,0.3),
+                  EGR=c(0.6,0.4,0.4,0.6,0.2,0.8), N=192, tunec=1.2, tunef=1.5, Bf=0, Bc=0, 
+                  thin=1, kick=0, Lf=10, Lc=100, T=10)
 
 ## Calculating True PAR/PAF for comparison ##
 model <- glm(formula = cbind(low,N-low)~ smoke + race, data = lbw, family = binomial(link=logit),x=T)
